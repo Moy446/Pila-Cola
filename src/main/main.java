@@ -10,7 +10,7 @@ public class main {
         cola();
     }
     public static void pila(){
-        System.out.println("datos con pila -------------------------------------------");
+        System.out.println("datos con pila");
         datosPila.push(1);
         datosPila.push(2);
         datosPila.push(3);
@@ -18,7 +18,7 @@ public class main {
         System.out.println(datosPila.pop());
     }
     public static void cola(){
-        System.out.println("datos con cola -------------------------------------------");
+        System.out.println("datos con cola");
         datosCola.Encolar(4);
         datosCola.Encolar(5);
         datosCola.Encolar(6);

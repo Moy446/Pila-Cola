@@ -26,11 +26,11 @@ public class Cola {
             valores += "la cola esta vacia";
             return valores;
         }
-            valores+= "----------------------------------------------\n";
-            while (aux != null){
-                valores+= "registro, pero en cola: "+aux.getNext()+"\n";
-                aux = aux.getNext();
-            }
+        valores+= "----------------------------------------------\n";
+        while (aux != null){
+            valores+= "registro, pero en cola: "+aux.getRegistro()+"\n";
+            aux = aux.getNext();
+        }
         return valores;
     }
     public String Desencolar(){
@@ -45,7 +45,7 @@ public class Cola {
         }else{
             cola = aux.getNext();
         }
-        valores = "se elimino el primer escenario";
+        valores = recorrer();
         return valores;
     }
     

@@ -27,8 +27,8 @@ public class Pila {
             valores ="ta vacio";
             return valores;
         }
+        valores+= "----------------------------------------------\n";
         while (aux != null){
-            valores+= "----------------------------------------------\n";
             valores+= "alumno: "+aux.getRegistro()+"\n";
             aux = aux.getNext();
         }
@@ -45,10 +45,9 @@ public class Pila {
             pila = null;
         }else{
             while (aux.getNext().getNext() != null){
-                    pila = aux.getNext();
-                
-                aux = aux.getNext();
+                    aux = aux.getNext();
             }
+            aux.setNext(null);
         }
         valores = printf();
         return valores;
